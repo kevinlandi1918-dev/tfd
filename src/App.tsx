@@ -64,7 +64,7 @@ const menuCategories = [
   },
 ];
 
-function ImagePlaceholder({ label, className = '' }: { label: string; className?: string }) {
+function <img src='/258s(1).jpg' alt="Diner Interior" className="absolute inset-0 w-full h-full object-cover opacity-20" />
   return (
     <div className={`placeholder-image ${className}`} role="img" aria-label={label}>
       <span className="placeholder-lines" />
@@ -105,7 +105,7 @@ function App() {
 
       <main id="top">
         <section className="relative flex min-h-screen items-end bg-cream pt-[76px] text-ink">
-          <ImagePlaceholder label="<img src="/258s(4).jpg" alt="Diner Food" className="w-full h-full object-cover rounded-lg shadow-md" />" className="hero-placeholder absolute bottom-0 right-0 top-[76px] w-full opacity-20 lg:w-[48%] lg:opacity-100" />
+          <img src='/258s(4).jpg' alt="Diner Food" className="w-full h-full object-cover rounded-lg shadow-md" />
           <div className="absolute inset-y-0 left-0 right-0 bg-gradient-to-r from-cream via-cream/95 to-transparent lg:right-[28%]" />
           <div className="absolute bottom-0 left-0 right-0 h-36 bg-gradient-to-t from-cream/80 to-transparent" />
           <div className="relative mx-auto w-full max-w-7xl px-5 pb-20 pt-28 sm:px-8 sm:pb-28 lg:px-12 lg:pb-32">
