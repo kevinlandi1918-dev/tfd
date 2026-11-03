@@ -77,9 +77,8 @@ function App() {
             <span className="flex h-10 w-10 items-center justify-center rounded-full border border-gold/50 text-gold transition-transform duration-300 group-hover:rotate-12">
               <Star size={17} fill="currentColor" strokeWidth={1.5} />
             </span>
-            <span className="whitespace-nowrap font-display text-[16px] leading-[0.95] tracking-tight sm:text-[18px]">
-              Tommy&apos;s<br />
-              <span className="text-gold">Family Restaurant</span>
+            <span className="font-display text-[16px] leading-[0.95] tracking-tight sm:text-[18px]">
+              Tommy&apos;s <span className="text-gold">Family Restaurant</span>
             </span>
           </a>
           <nav className={`${menuOpen ? 'flex' : 'hidden'} absolute left-0 right-0 top-[76px] flex-col gap-1 border-b border-white/10 bg-ink px-5 py-5 sm:px-8 lg:static lg:flex lg:flex-row lg:items-center lg:gap-9 lg:border-0 lg:bg-transparent lg:p-0`}>
@@ -103,7 +102,7 @@ function App() {
           
           {/* HERO IMAGE */}
           <img 
-            src="/258s(4).jpg" 
+            src="/food.jpg" 
             alt="Diner Food" 
             className="absolute inset-0 w-full h-full object-cover opacity-30" 
           />
@@ -149,7 +148,7 @@ function App() {
             
             {/* ABOUT SECTION IMAGE */}
             <img 
-              src="/258s(1).jpg" 
+              src="/interior.jpg" 
               alt="Diner Interior" 
               className="w-full aspect-[4/3] min-h-[360px] lg:min-h-[520px] object-cover rounded-lg shadow-md" 
             />
