@@ -64,15 +64,6 @@ const menuCategories = [
   },
 ];
 
-function <img src='/258s(1).jpg' alt="Diner Interior" className="absolute inset-0 w-full h-full object-cover opacity-20" />
-  return (
-    <div className={`placeholder-image ${className}`} role="img" aria-label={label}>
-      <span className="placeholder-lines" />
-      <span>{label}</span>
-    </div>
-  );
-}
-
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -86,7 +77,11 @@ function App() {
             <span className="flex h-10 w-10 items-center justify-center rounded-full border border-gold/50 text-gold transition-transform duration-300 group-hover:rotate-12">
               <Star size={17} fill="currentColor" strokeWidth={1.5} />
             </span>
-            <span className="whitespace-nowrap font-display text-[16px] leading-[0.95] tracking-tight sm:text-[18px]">Tommy&apos;s<br /><span className="text-gold">Tommy's Family Restaurant</span>
+            <span className="whitespace-nowrap font-display text-[16px] leading-[0.95] tracking-tight sm:text-[18px]">
+              Tommy&apos;s<br />
+              <span className="text-gold">Family Restaurant</span>
+            </span>
+          </a>
           <nav className={`${menuOpen ? 'flex' : 'hidden'} absolute left-0 right-0 top-[76px] flex-col gap-1 border-b border-white/10 bg-ink px-5 py-5 sm:px-8 lg:static lg:flex lg:flex-row lg:items-center lg:gap-9 lg:border-0 lg:bg-transparent lg:p-0`}>
             {['Menu', 'About', 'Location'].map((item) => (
               <a key={item} href={`#${item.toLowerCase()}`} onClick={closeMenu} className="border-b border-white/10 py-3 text-sm font-medium uppercase tracking-[0.16em] text-white/75 transition-colors hover:text-gold lg:border-0 lg:py-2">
@@ -105,8 +100,15 @@ function App() {
 
       <main id="top">
         <section className="relative flex min-h-screen items-end bg-cream pt-[76px] text-ink">
-          <img src='/258s(4).jpg' alt="Diner Food" className="w-full h-full object-cover rounded-lg shadow-md" />
-          <div className="absolute inset-y-0 left-0 right-0 bg-gradient-to-r from-cream via-cream/95 to-transparent lg:right-[28%]" />
+          
+          {/* HERO IMAGE */}
+          <img 
+            src="/258s(4).jpg" 
+            alt="Diner Food" 
+            className="absolute inset-0 w-full h-full object-cover opacity-30" 
+          />
+
+          <div className="absolute inset-y-0 left-0 right-0 bg-gradient-to-r from-cream via-cream/90 to-transparent lg:right-[28%]" />
           <div className="absolute bottom-0 left-0 right-0 h-36 bg-gradient-to-t from-cream/80 to-transparent" />
           <div className="relative mx-auto w-full max-w-7xl px-5 pb-20 pt-28 sm:px-8 sm:pb-28 lg:px-12 lg:pb-32">
             <div className="max-w-3xl animate-rise">
@@ -144,14 +146,21 @@ function App() {
         <section id="about" className="scroll-mt-20 bg-sand px-5 py-24 sm:px-8 lg:px-12 lg:py-32">
           <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-[.85fr_1.15fr] lg:gap-24">
             <div><p className="eyebrow">A neighborhood original</p><h2 className="section-title">Made for <em>regulars</em></h2><div className="mt-8 space-y-5 text-[17px] leading-[1.75] text-ink/70"><p>Some places feed you. Tommy&apos;s makes you feel at home.</p><p>Family-run since 1985, we&apos;ve been serving up the classics Jersey City loves — from a stack of pancakes at sunrise to a late-night gyro with all the fixings.</p><p>We believe a good meal should be generous, familiar, and served with a smile. Pull up a chair. You&apos;re one of us now.</p></div><div className="mt-9 flex items-center gap-4"><span className="flex h-12 w-12 items-center justify-center rounded-full bg-red text-white"><Star size={19} fill="currentColor" /></span><div><p className="font-display text-lg">The Tommy&apos;s family</p><p className="text-xs uppercase tracking-[0.16em] text-ink/45">Jersey City, NJ</p></div></div></div>
-            <ImagePlaceholder label="<img src="/258s(1).jpg" alt="Diner Interior" className="absolute inset-0 w-full h-full object-cover opacity-20" /> className="aspect-[4/3] min-h-[360px] lg:min-h-[520px]" />
+            
+            {/* ABOUT SECTION IMAGE */}
+            <img 
+              src="/258s(1).jpg" 
+              alt="Diner Interior" 
+              className="w-full aspect-[4/3] min-h-[360px] lg:min-h-[520px] object-cover rounded-lg shadow-md" 
+            />
+
           </div>
         </section>
 
         <section id="location" className="scroll-mt-20 px-5 py-24 sm:px-8 lg:px-12 lg:py-32">
           <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[.7fr_1.3fr] lg:items-center lg:gap-24">
             <div><p className="eyebrow">Come on over</p><h2 className="section-title">Find <em>Tommy&apos;s</em></h2><div className="mt-10 space-y-7"><div className="contact-row"><MapPin className="text-red" size={21} /><div><p className="label">Address</p><p>349 Central Ave<br />Jersey City, NJ 07307</p></div></div><div className="contact-row"><Phone className="text-red" size={21} /><div><p className="label">Phone</p><a href="tel:+12012171211" className="transition-colors hover:text-red">+1 201-217-1211</a></div></div><div className="contact-row"><Clock3 className="text-red" size={21} /><div><p className="label">Hours</p><p>Sunday–Saturday<br />6:00 AM – 8:00 PM</p></div></div></div><a href="tel:+12012171211" className="mt-10 inline-flex items-center gap-3 border-b-2 border-red pb-2 text-sm font-bold uppercase tracking-[0.15em] text-red transition-all hover:gap-5">Call ahead <ArrowRight size={16} /></a></div>
-            <div className="map-placeholder"><MapPin size={38} strokeWidth={1.25} /><span>[ GOOGLE MAPS EMBED PLACEHOLDER ]</span><small>349 Central Ave · Jersey City</small></div>
+            <div className="map-placeholder flex flex-col items-center justify-center p-10 bg-sand rounded-lg border border-ink/10 text-ink/50"><MapPin size={38} strokeWidth={1.25} /><span className="mt-4 font-semibold uppercase tracking-widest text-sm">[ GOOGLE MAPS EMBED PLACEHOLDER ]</span><small className="mt-2">349 Central Ave · Jersey City</small></div>
           </div>
         </section>
       </main>
