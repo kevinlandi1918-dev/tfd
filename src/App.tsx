@@ -102,8 +102,8 @@ function App() {
           
           {/* HERO IMAGE */}
           <img 
-            src="/food.jpg" 
-            alt="Diner Food" 
+            src="/interior.jpg" 
+            alt="Tommy's Family Restaurant interior" 
             className="absolute inset-0 w-full h-full object-cover opacity-30" 
           />
 
@@ -153,8 +153,8 @@ function App() {
             
             {/* ABOUT SECTION IMAGE */}
             <img 
-              src="/interior.jpg" 
-              alt="Diner Interior" 
+              src="/food.jpg" 
+              alt="Classic diner food" 
               className="w-full aspect-[4/3] min-h-[360px] lg:min-h-[520px] object-cover rounded-lg shadow-md" 
             />
 
@@ -164,7 +164,7 @@ function App() {
         <section id="location" className="scroll-mt-20 px-5 py-24 sm:px-8 lg:px-12 lg:py-32">
           <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[.7fr_1.3fr] lg:items-center lg:gap-24">
             <div><p className="eyebrow">Come on over</p><h2 className="section-title">Find <em>Tommy&apos;s</em></h2><div className="mt-10 space-y-7"><div className="contact-row"><MapPin className="text-red" size={21} /><div><p className="label">Address</p><p>349 Central Ave<br />Jersey City, NJ 07307</p></div></div><div className="contact-row"><Phone className="text-red" size={21} /><div><p className="label">Phone</p><a href="tel:+12012171211" className="transition-colors hover:text-red">+1 201-217-1211</a></div></div><div className="contact-row"><Clock3 className="text-red" size={21} /><div><p className="label">Hours</p><p>Sunday–Saturday<br />6:00 AM – 8:00 PM</p></div></div></div><a href="tel:+12012171211" className="mt-10 inline-flex items-center gap-3 border-b-2 border-red pb-2 text-sm font-bold uppercase tracking-[0.15em] text-red transition-all hover:gap-5">Call ahead <ArrowRight size={16} /></a></div>
-            <div className="map-placeholder flex flex-col items-center justify-center p-10 bg-sand rounded-lg border border-ink/10 text-ink/50"><MapPin size={38} strokeWidth={1.25} /><span className="mt-4 font-semibold uppercase tracking-widest text-sm">[ GOOGLE MAPS EMBED PLACEHOLDER ]</span><small className="mt-2">349 Central Ave · Jersey City</small></div>
+            <div className="map-placeholder overflow-hidden rounded-lg border border-ink/10 bg-sand"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d889.877059042026!2d-74.04924802952627!3d40.74703855187072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2576a349f9fd5%3A0xb6b26f2d1ab921bd!2sTommy's%20Family%20Restaurant!5e0!3m2!1sen!2sus!4v1793749967820!5m2!1sen!2sus" title="Tommy's Family Restaurant location map" width="600" height="450" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="strict-origin-when-cross-origin" /></div>
           </div>
         </section>
       </main>
