@@ -105,7 +105,7 @@ function App() {
 
       <main id="top">
         <section className="relative flex min-h-screen items-end bg-cream pt-[76px] text-ink">
-          <ImagePlaceholder label="[ INSERT DINER INTERIOR IMAGE HERE ]" className="hero-placeholder absolute bottom-0 right-0 top-[76px] w-full opacity-20 lg:w-[48%] lg:opacity-100" />
+          <ImagePlaceholder label="<img src="/258s(4).jpg" alt="Diner Food" className="w-full h-full object-cover rounded-lg shadow-md" />" className="hero-placeholder absolute bottom-0 right-0 top-[76px] w-full opacity-20 lg:w-[48%] lg:opacity-100" />
           <div className="absolute inset-y-0 left-0 right-0 bg-gradient-to-r from-cream via-cream/95 to-transparent lg:right-[28%]" />
           <div className="absolute bottom-0 left-0 right-0 h-36 bg-gradient-to-t from-cream/80 to-transparent" />
           <div className="relative mx-auto w-full max-w-7xl px-5 pb-20 pt-28 sm:px-8 sm:pb-28 lg:px-12 lg:pb-32">
@@ -144,7 +144,7 @@ function App() {
         <section id="about" className="scroll-mt-20 bg-sand px-5 py-24 sm:px-8 lg:px-12 lg:py-32">
           <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-[.85fr_1.15fr] lg:gap-24">
             <div><p className="eyebrow">A neighborhood original</p><h2 className="section-title">Made for <em>regulars</em></h2><div className="mt-8 space-y-5 text-[17px] leading-[1.75] text-ink/70"><p>Some places feed you. Tommy&apos;s makes you feel at home.</p><p>Family-run since 1985, we&apos;ve been serving up the classics Jersey City loves — from a stack of pancakes at sunrise to a late-night gyro with all the fixings.</p><p>We believe a good meal should be generous, familiar, and served with a smile. Pull up a chair. You&apos;re one of us now.</p></div><div className="mt-9 flex items-center gap-4"><span className="flex h-12 w-12 items-center justify-center rounded-full bg-red text-white"><Star size={19} fill="currentColor" /></span><div><p className="font-display text-lg">The Tommy&apos;s family</p><p className="text-xs uppercase tracking-[0.16em] text-ink/45">Jersey City, NJ</p></div></div></div>
-            <ImagePlaceholder label="[ INSERT EXTERIOR OR DINING ROOM IMAGE HERE ]" className="aspect-[4/3] min-h-[360px] lg:min-h-[520px]" />
+            <ImagePlaceholder label="<img src="/258s(1).jpg" alt="Diner Interior" className="absolute inset-0 w-full h-full object-cover opacity-20" /> className="aspect-[4/3] min-h-[360px] lg:min-h-[520px]" />
           </div>
         </section>
 
