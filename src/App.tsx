@@ -107,13 +107,15 @@ function App() {
             className="absolute inset-0 w-full h-full object-cover opacity-30" 
           />
 
-          <div className="absolute inset-y-0 left-0 right-0 bg-gradient-to-r from-cream via-cream/90 to-transparent lg:right-[28%]" />
-          <div className="absolute bottom-0 left-0 right-0 h-36 bg-gradient-to-t from-cream/80 to-transparent" />
+          {/* Stronger gradient overlay to fix white-on-white */}
+          <div className="absolute inset-y-0 left-0 right-0 bg-gradient-to-r from-cream via-cream/95 to-transparent lg:right-[28%]" />
+          <div className="absolute bottom-0 left-0 right-0 h-36 bg-gradient-to-t from-cream to-transparent" />
+          
           <div className="relative mx-auto w-full max-w-7xl px-5 pb-20 pt-28 sm:px-8 sm:pb-28 lg:px-12 lg:pb-32">
-            <div className="max-w-3xl animate-rise">
+            <div className="max-w-3xl animate-rise drop-shadow-md">
               <div className="mb-7 flex items-center gap-3 text-xs font-bold uppercase tracking-[0.26em] text-gold"><span className="h-px w-10 bg-gold" /> Since 1985 · Jersey City</div>
               <h1 className="max-w-3xl font-display text-5xl leading-[0.95] tracking-[-0.04em] sm:text-7xl lg:text-[92px]">Serving Jersey City <em className="text-gold">Since 1985</em></h1>
-              <p className="mt-7 max-w-xl text-lg leading-relaxed text-ink/70 sm:text-xl">Classic diner fare, hearty portions, and a welcoming atmosphere.</p>
+              <p className="mt-7 max-w-xl text-lg leading-relaxed text-ink/80 sm:text-xl font-medium">Classic diner fare, hearty portions, and a welcoming atmosphere.</p>
               <a href="#menu" className="mt-10 inline-flex items-center gap-3 rounded-full bg-red px-7 py-4 text-sm font-bold uppercase tracking-[0.16em] text-white shadow-xl shadow-black/20 transition-all hover:-translate-y-1 hover:bg-red-dark">View Menu <ArrowRight size={17} /></a>
             </div>
           </div>
@@ -124,7 +126,10 @@ function App() {
           <div className="mx-auto max-w-7xl">
             <div className="mb-14 flex flex-col justify-between gap-7 lg:flex-row lg:items-end">
               <div><p className="eyebrow">Good food, no fuss</p><h2 className="section-title">The <em>menu</em></h2></div>
-              <div className="max-w-sm border-l-2 border-red pl-5 text-sm leading-relaxed text-ink/65">Prices available in-store or by phone. Call us for current pricing.</div>
+              {/* Disclaimer placed clearly next to the menu heading */}
+              <div className="max-w-sm border-l-2 border-red pl-5 text-sm leading-relaxed text-ink/75 font-semibold bg-sand/50 p-4 rounded-r-lg">
+                Prices available in-store or by phone.<br/> Call us for current pricing.
+              </div>
             </div>
             <div className="grid gap-5 md:grid-cols-2">
               {menuCategories.map((category) => (
