@@ -86,8 +86,7 @@ function App() {
             <span className="flex h-10 w-10 items-center justify-center rounded-full border border-gold/50 text-gold transition-transform duration-300 group-hover:rotate-12">
               <Star size={17} fill="currentColor" strokeWidth={1.5} />
             </span>
-            <span className="whitespace-nowrap font-display text-[16px] leading-[0.95] tracking-tight sm:text-[18px]">Tommy&apos;s<br /><span className="text-gold">Family Restaurant</span></span>
-          </a>
+            <span className="whitespace-nowrap font-display text-[16px] leading-[0.95] tracking-tight sm:text-[18px]">Tommy&apos;s<br /><span className="text-gold">Tommy's Family Restaurant</span>
           <nav className={`${menuOpen ? 'flex' : 'hidden'} absolute left-0 right-0 top-[76px] flex-col gap-1 border-b border-white/10 bg-ink px-5 py-5 sm:px-8 lg:static lg:flex lg:flex-row lg:items-center lg:gap-9 lg:border-0 lg:bg-transparent lg:p-0`}>
             {['Menu', 'About', 'Location'].map((item) => (
               <a key={item} href={`#${item.toLowerCase()}`} onClick={closeMenu} className="border-b border-white/10 py-3 text-sm font-medium uppercase tracking-[0.16em] text-white/75 transition-colors hover:text-gold lg:border-0 lg:py-2">
