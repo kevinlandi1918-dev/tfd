@@ -19,10 +19,12 @@ const menuCategories = [
     items: [
       ['Two Eggs, Any Style', 'with bacon, ham, or sausage'],
       ['New York Strip Steak & Eggs', ''],
+      ['Virginia Ham Steak & Eggs', ''],
+      ['Corned Beef Hash & Eggs', ''],
       ['Plain Omelette', ''],
-      ['Feta Cheese Omelette', ''],
       ['Western Omelette', ''],
-      ['Grilled Chicken Omelette', ''],
+      ['Mediterranean Omelette', 'feta, tomato, onion, peppers'],
+      ['Athenian Omelette', 'gyro meat, spinach, tomato, onion, peppers, feta'],
       ['Healthy Omelette', '4 egg whites, turkey'],
     ],
   },
@@ -33,7 +35,10 @@ const menuCategories = [
     items: [
       ['Buttermilk Pancakes', ''],
       ['Challah French Toast', ''],
-      ['Monte Cristo', ''],
+      ['Silver Dollar Pancakes', ''],
+      ['Chocolate Chip Pancakes', ''],
+      ['Belgian Waffle', ''],
+      ['Monte Cristo', 'ham, turkey, melted Swiss'],
       ['Waffle & Fried Chicken Strips', ''],
     ],
   },
@@ -42,12 +47,13 @@ const menuCategories = [
     title: 'Sandwiches & Gyros',
     description: 'Stacked high and wrapped with plenty of diner pride.',
     items: [
-      ['Greek Gyro', ''],
-      ['Chicken Gyro', ''],
-      ['Classic Reuben', ''],
+      ['Greek Gyro', 'on pita with lettuce, tomato, onion, tzatziki'],
+      ['Chicken Gyro', 'on pita with lettuce, tomato, onion, tzatziki'],
+      ['Gyro Platter', 'French fries & Greek salad'],
+      ['Classic Reuben', 'corned beef, sauerkraut, Swiss'],
       ['Happy Waitress', 'open-faced cheese, tomato, bacon'],
-      ['Chicken Cutlet', ''],
       ['Black Forest', 'grilled roast beef, swiss, fried onions'],
+      ['Philly Cheese Steak', 'with fried onions'],
     ],
   },
   {
@@ -56,10 +62,52 @@ const menuCategories = [
     description: 'Share a plate, or keep it all to yourself. We understand.',
     items: [
       ['Stuffed Mushrooms', 'crabmeat'],
-      ['Buffalo Wings', ''],
-      ['Chicken Fingers', ''],
+      ['Buffalo Wings', 'bleu cheese, celery'],
+      ['Chicken Fingers', 'honey mustard'],
       ['Disco Fries', 'gravy, cheese'],
-      ['Fully Loaded Fries', 'chili, cheese, chipotle mayo'],
+      ['Mozzarella Sticks', 'tomato sauce'],
+      ['Super Sampler', 'wings, fingers, fries, mozzarella sticks, rings'],
+    ],
+  },
+  {
+    number: '05',
+    title: 'Burgers & Grilled Chicken',
+    description: 'Char-broiled 7 oz. beef burgers and grilled chicken sandwiches.',
+    items: [
+      ['Plain Burger', 'beef or turkey'],
+      ['Cheese Burger', 'American, Swiss, or mozzarella'],
+      ['Patty Melt', 'grilled rye, American cheese, onions'],
+      ['Taylor Burger', 'Taylor ham, fried egg, cheese'],
+      ['Grilled Chicken Breast', 'on a hard roll with coleslaw and pickle'],
+      ['Grilled Chicken Cordon Bleu', 'ham, Swiss, French fries'],
+      ['Grilled Chicken Greek Style', 'tomato, onion, feta, French fries'],
+    ],
+  },
+  {
+    number: '06',
+    title: 'Salads & Wraps',
+    description: 'Fresh greens and hearty wraps, served with fries.',
+    items: [
+      ['Garden Salad', 'mixed greens, tomatoes, peppers, onion, cucumber'],
+      ['Greek Salad', 'feta, Kalamata olives, anchovies, stuffed grape leaves'],
+      ['Classic Caesar Salad', 'romaine, Parmesan, croutons'],
+      ['Chicken Caesar Wrap', 'grilled chicken, Caesar salad'],
+      ['Turkey Club Wrap', 'roast turkey, bacon, lettuce, tomato, mayo'],
+      ['New Yorker Wrap', 'hot corned beef, Swiss, sauerkraut, Russian dressing'],
+    ],
+  },
+  {
+    number: '07',
+    title: 'Dinner Entrees & Seafood',
+    description: 'Served with soup or salad, potato, and vegetable.',
+    items: [
+      ['N.Y. Strip Steak', 'with onion rings'],
+      ['Broiled Fresh Salmon Filet', 'lemon butter sauce'],
+      ['Broiled Jumbo Shrimp', 'lemon butter sauce'],
+      ['Chicken Marsala', 'mushrooms in Marsala wine sauce'],
+      ['Chicken Francaise', 'lemon butter sauce'],
+      ['Veal Cutlet Parmigiana', 'served with linguine'],
+      ['Spaghetti with Meatballs', ''],
     ],
   },
 ];
@@ -126,6 +174,7 @@ function App() {
           <div className="mx-auto max-w-7xl">
             <div className="mb-14 flex flex-col justify-between gap-7 lg:flex-row lg:items-end">
               <div><p className="eyebrow">Good food, no fuss</p><h2 className="section-title">The <em>menu</em></h2></div>
+              
               {/* Disclaimer placed clearly next to the menu heading */}
               <div className="max-w-sm border-l-2 border-red pl-5 text-sm leading-relaxed text-ink/75 font-semibold bg-sand/50 p-4 rounded-r-lg">
                 Prices available in-store or by phone.<br/> Call us for current pricing.
